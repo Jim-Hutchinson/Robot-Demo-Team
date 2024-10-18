@@ -24,6 +24,8 @@ Controls for manual and autonomous driving will go here.
     3c. Live feed to control portal
 
 4. ERD Model
+
 5. Database Work
-    5a. 
-    5b. 
+    5a. Connect robot to database
+    5b. Interface with web page
+    5c. Interface with our code
