@@ -7,6 +7,11 @@ describe orders;
 describe product;
 describe order_hold;
 
+-- Make locationID actually reference locations
+alter table orders
+add constraint deliverTo
+foreign key (locationId) references location(locationID);
+
 /*
 Create a middle table that can house many to many connections between the orders a products
 This allows for quantities instead of there being repeating items in the cart
