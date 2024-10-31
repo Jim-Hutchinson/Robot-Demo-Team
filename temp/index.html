@@ -17,16 +17,30 @@
   <div class="header"> Warehouse Delivery </div>
   <form id="orderForm" action="insertOrder.php" method="post">
   <div class="flex-container">
+
     <div class="box">
       <select id="productSelect" name="selection1" onchange="setSelection1(this.value)">
         <option>Select Product</option>
       </select>
     </div>
+
+    <div class="box">
+      <select id="QuantitySelect" name="selection">
+        <option>Select Amount</option>
+        <option>1</option>
+        <option>2</option>
+        <option>3</option>
+        <option>4</option>
+        <option>5</option>
+      </select>
+    </div>
+
     <div class="box2">
       <select id="locationSelect" name="selection2" onchange="setSelection2(this.value)">
         <option>Select Location</option>
       </select>
     </div>
+
   </div>
   </div>
   <div class="line"></div>

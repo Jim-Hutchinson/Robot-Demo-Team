@@ -69,7 +69,7 @@ html {
 }
 
 .box2 {
-  margin-right: 40%; /* Increased margin-right to move .box2 more to the right */
+  margin-right: 50%; /* Increased margin-right to move .box2 more to the right */
 }
 
 .box select,
@@ -202,7 +202,7 @@ html {
   
 }
 
-@media (min-width: 1025px) and (max-width: 1440px) { /*laptop size */
+@media (min-width: 1025px) and (max-width: 1920px) { /*laptop size */
   .header {
     font-size: 4rem;
     padding: 50px;
@@ -295,7 +295,7 @@ html {
   }
 
 }
-@media (min-width: 1441px) {
+@media (min-width: 1921px) {
   .header {
     font-size: 6rem;
     padding: 50px;
