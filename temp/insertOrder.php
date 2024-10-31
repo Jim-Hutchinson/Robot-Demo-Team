@@ -21,7 +21,6 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         try {
             WarehouseDatabase::connect();
-
             $sql = "INSERT INTO orders (productId, locationId, orderedOn)
                     VALUES (:productId, :locationId, :orderedOn)";
             $params = array(
