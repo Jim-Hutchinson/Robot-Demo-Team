@@ -1,5 +1,6 @@
 import cv2
 
+#Open Camera
 cv2.namedWindow("preview")
 vc = cv2.VideoCapture(0)
 
