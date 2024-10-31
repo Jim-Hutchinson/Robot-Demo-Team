@@ -1,0 +1,28 @@
+Python config:
+
+python version is 2.7.17
+python3 version is 3.6.9
+python 3.11.9 is downloaded to be installed from source
+
+Camera:
+
+Streaming:
+https://forums.raspberrypi.com/viewtopic.php?t=350676
+https://www.raspberrypi.com/documentation/computers/camera_software.html#tcp
+https://github.com/TheTridentGuy/opencv-fpv-server
+
+QR Codes:
+
+from PIL import Image
+from pyzbar.pyzbar import decode
+data = decode(Image.open('test1.png'))
+print(data)
+
+Hardware:
+
+Front left wheel does not drive forward. Backward works fine. We suspect this is either an issue with the motor gearbox or the motor controller.
+
+Networking:
+
+The robot is connected to the Etown Guest wifi, but this connection is limited and slow. A phone hotspot seems to work better.
+
