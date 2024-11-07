@@ -10,6 +10,9 @@ Streaming:
 https://forums.raspberrypi.com/viewtopic.php?t=350676
 https://www.raspberrypi.com/documentation/computers/camera_software.html#tcp
 https://github.com/TheTridentGuy/opencv-fpv-server
+https://www.digikey.com/en/maker/projects/stream-live-video-over-rtsp-from-your-raspberry-pi/e7f81253dfd443838fca109f3c1e6c92
+https://www.instructables.com/How-to-Stream-Video-From-Raspberry-Pi-Camera-to-Co/
+^ appears to be the easiest ^ 
 
 QR Codes:
 
