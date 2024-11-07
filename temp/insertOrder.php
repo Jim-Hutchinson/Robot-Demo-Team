@@ -5,9 +5,10 @@ include "WarehouseDatabase.php";
 header('Content-Type: application/json'); // Indicate that we're returning JSON
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
-    if (isset($_POST['selection1'], $_POST['selection2'])) {
+    if (isset($_POST['selection1'], $_POST['selection2'], $_POST['quantity'])) {
         $productId = $_POST['selection1'];
         $locationId = $_POST['selection2'];
+        $quantity = $_POST['quantity'];
 
         // Check for both placeholder values and empty values.
         if ($productId === 'Select Product' || empty($productId) || 
@@ -21,12 +22,13 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         try {
             WarehouseDatabase::connect();
-            $sql = "INSERT INTO orders (productId, locationId, orderedOn)
-                    VALUES (:productId, :locationId, :orderedOn)";
+            $sql = "INSERT INTO live_order (productID, locationID, orderedOn, quantity)
+                    VALUES (:productId, :locationId, :orderedOn, :quantity)";
             $params = array(
                 ':productId' => $productId,
                 ':locationId' => $locationId,
-                ':orderedOn' => $orderedOn
+                ':orderedOn' => $orderedOn, 
+                ':quantity' => $quantity
             );
 
             WarehouseDatabase::startTransaction();
