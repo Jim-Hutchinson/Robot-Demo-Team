@@ -11,7 +11,7 @@ session_start();
 <body>
     <h1>This page will display the live camera feed from the robot.</h1>
     <form action="live_cam_feed.php" method="get">
-        <input type="submit" name="Start Video" value="Start Video"/>
+        <input type="submit" name="Start_Video" value="Start Video"/>
     </form>
 </body>
 </head>
@@ -19,7 +19,7 @@ session_start();
 
 
 <?PHP
-if(isset($_GET['Start Video'])) {
+if(isset($_GET['Start_Video'])) {
     echo shell_exec(escapeshellcmd('camera.py'));
 }
 ?>
