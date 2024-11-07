@@ -8,7 +8,7 @@ class WarehouseDatabase {
         // which is included in insertOrder.php before the instantiation of WarehouseDatabase.
         include "db_config.php"; // Including database configuration
         try {
-            self::$connection = new PDO("mysql:host=$servername;dbname=$database", $username, $password);
+            self::$connection = new PDO("mysql:host=$host;dbname=$database", $dbUsername, $dbPassword);
             // Set the PDO error mode to exception
             self::$connection->setAttribute(PDO::ATTR_ERRMODE, PDO::ERRMODE_EXCEPTION);
         } catch(PDOException $e) {
