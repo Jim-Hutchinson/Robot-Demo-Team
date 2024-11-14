@@ -66,7 +66,7 @@ document.addEventListener('DOMContentLoaded', function () {
   orderForm.addEventListener('submit', function (event) {
     event.preventDefault();
     const formData = new FormData(orderForm);
-    fetch('insertOrder.php', {
+    fetch('create.php', {
       method: 'POST',
       body: formData
     })

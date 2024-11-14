@@ -5,7 +5,7 @@ class WarehouseDatabase {
 
     public static function connect() {
         // Assume $dbhost, $dbuser, $dbpass, and $dbname are defined in db_config.php
-        // which is included in insertOrder.php before the instantiation of WarehouseDatabase.
+        // which is included in create.php before the instantiation of WarehouseDatabase.
         include "db_config.php"; // Including database configuration
         try {
             self::$connection = new PDO("mysql:host=$host;dbname=$database", $dbUsername, $dbPassword);
