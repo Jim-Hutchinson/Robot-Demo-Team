@@ -12,6 +12,7 @@ ProductID = str(results[0][0])
 
 # initialize the cam
 cap = cv2.VideoCapture(0)
+print("QR Reader Active!")
 
 # initialize the cv2 QRCode detector
 detector = cv2.QRCodeDetector()
@@ -34,9 +35,6 @@ while True:
         if data==ProductID:
             print("ID "+ProductID+":"+Product+" Found!")
             break
-        else:
-            print("ID not found.")
-            print("ID Found was "+data)
 
     # display the result
     cv2.imshow("img", img)    
