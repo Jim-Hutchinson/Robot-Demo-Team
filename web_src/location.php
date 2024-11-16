@@ -1,6 +1,6 @@
 <?php
-include "db_config.php";
-include "WarehouseDatabase.php";
+include "../data_src/includes/db_config.php";
+include "../data_src/includes/WarehouseDatabase.php";
 try {
   // Connect to the database
   $conn = new PDO("mysql:host=$host;dbname=$database", $dbUsername, $dbPassword);

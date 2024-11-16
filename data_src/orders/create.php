@@ -1,6 +1,6 @@
 <?php
-include "db_config.php";
-include "WarehouseDatabase.php";
+include "../includes/db_config.php";
+include "../includes/WarehouseDatabase.php";
 
 header('Content-Type: application/json'); // Indicate that we're returning JSON
 
