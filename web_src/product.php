@@ -1,5 +1,5 @@
 <?php
-include "db_config.php";
+include "../data_src/includes/db_config.php";
 include "WarehouseDatabase.php";
 try {
   // Connect to the database
