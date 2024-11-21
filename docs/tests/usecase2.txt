@@ -1,4 +1,7 @@
-Use Case #2
-1. When opening the webpage in web_src, will be directed to index.html
-2. Index will show input boxes for username and database_password
-3. Upon entering in a valid username and password, user will be redirected to order.html
+Use Case #2: 
+
+Step 1. When opening the webpage in web_src, will be directed to index.html
+
+Step 2. Index will show input boxes for username and database_password
+
+Step 3. Upon entering in a valid username and password, user will be redirected to order.html
