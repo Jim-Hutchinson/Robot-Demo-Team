@@ -35,6 +35,9 @@ while True:
         if data==ProductID:
             print("ID "+ProductID+":"+Product+" Found!")
             break
+        elif data!="":
+            print("Correct ID not found, found ID "+data+" instead.")
+        
 
     # display the result
     cv2.imshow("img", img)    
