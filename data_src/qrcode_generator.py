@@ -1,9 +1,12 @@
 # QR Code Generator
-
 import segno
+import os
+import shutil
+ID = input("Input Wanted ID: ")
 
 #Generate QR Codes
-for i in range(5):
-    qrcode = segno.make_qr(str(i+1))
-    qrcode.save("robot_qrcode"+str(i+1)+".png",
-                scale=5)
+qrcode = segno.make_qr(ID)
+qrcode.save("robot_qrcode_ID"+ID+".png",
+            scale=5)
+
+#TODO Move QR Code Generated into QRCodes folder

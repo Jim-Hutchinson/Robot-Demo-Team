@@ -1,1 +1,9 @@
-Use Case #1
+Use Case #1: Successfully Recognize Product by QR
+
+Step 1. Use qrcode_generator to create a QR code with the same ID as the product you want.
+
+Step 2. Run robot_main and select the desired product with matching ID
+
+Step 3. Put the generated QR code in front of the camera
+
+Step 4. If successful, the camera will close and print the product and its ID into the terminal.
