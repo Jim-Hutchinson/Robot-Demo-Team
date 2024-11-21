@@ -1,3 +1,6 @@
+<?php
+session_start();
+?>
 <HTML>
     <HEAD>
         <title>Robot Ordering Website</title>

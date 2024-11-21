@@ -1,6 +1,10 @@
 <?php
 include "../data_src/includes/db_config.php";
 include "../data_src/includes/WarehouseDatabase.php";
+require "../data_src/includes/sessioncheck.php";
+if(!checklogged()){
+  header("location:index.php?LoggedIn=False");
+}
 try {
   // Connect to the database
   $conn = new PDO("mysql:host=$host;dbname=$database", $dbUsername, $dbPassword);

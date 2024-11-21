@@ -1,3 +1,11 @@
+<?php
+require "../data_src/includes/sessioncheck.php";
+if(!checklogged()){
+  header("location:index.php?LoggedIn=False");
+}
+?>
+
+
 <!DOCTYPE html>
 <html>
 <!DOCTYPE html>

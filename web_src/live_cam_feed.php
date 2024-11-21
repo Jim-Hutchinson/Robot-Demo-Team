@@ -1,5 +1,8 @@
 <?PHP
-session_start();
+require "../data_src/includes/sessioncheck.php";
+if(!checklogged()){
+  header("location:index.php?LoggedIn=False");
+}
 ?>
 
 <html lang="en">
