@@ -1,22 +1,21 @@
 <?php
-//This page will be used to read user information to allow registered users to log in to the system and make orders
-include "../includes/db_config.php";
-session_start();
+// This page is used to read user information to allow registered users to log in to the system and make orders
+require "../includes/db_config.php";
 
-$user = $_SESSION("username");
+$user = $_GET["username"];
 
-$connection = new mysqli($servername, $username, $password, $database);
-
-if($connection->connect_error) {
-    die("Connection failed: " . $connection->connect_error);
+$conn = new mysqli($host, $dbUsername, $dbPassword, $database);
+if ($conn->connect_error) { 
+    die("Connection failed: " . $conn->connect_error); 
 }
 
-$sql = "SELECT * FROM users WHERE username = ?";
-$sql->bind_param("?", $user);
-$sql.execute();
-$result = $sql->get_result();
+$stmt = $conn->prepare("SELECT * FROM users WHERE username = ?");
+$stmt->bind_param("s", $user);
 
-if($result->num_rows > 0){
+$stmt->execute();
+$result = $stmt->get_result();
+$userData = $result->fetch_all(MYSQLI_ASSOC);
 
-}
+echo json_encode($userData);
+$conn->close();
 ?>

@@ -11,14 +11,21 @@ $protocol = $_SERVER['PROTOCOL'] = isset($_SERVER['HTTPS']) && !empty($_SERVER['
 $file_path = substr($_SERVER['REQUEST_URI'], 0, strrpos($_SERVER['REQUEST_URI'], '/') + 1);
 $url = $protocol."://".$host.$file_path;
 $url = str_replace("web_src/", "data_src/", $url);
-echo $url."users/read.php?username=".$username."This is the new url<br>";
 $web_string = file_get_contents($url."users/read.php?username=".$username);
+echo "Info sent to read.php with username={$username}, awaiting response<br>";
+echo "Link: ".$url."users/read.php?username=".$username."<br>";
 $users = json_decode($web_string);
+echo $users;
+if (is_array($users) && count($users) > 0) {
 
-
-
-//$_SESSION["LoggedIn"] = "NO";
-//$_SESSION["username"] = "";
-//header("location:index.htm?message=Login Failed");
+    $user = array_pop($users);
+    if($user->password==$password){
+        //you are logged in
+        $_SESSION["LoggedIn"] = "YES";
+        $_SESSION["username"] = $username;
+        header("location:order.html");
+        exit;
+    }
+}
 
 ?>
