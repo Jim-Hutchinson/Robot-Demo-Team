@@ -2,11 +2,18 @@ import mysql.connector
 from db_config import mydb
 import cv2
 
-Product = ("'"+input("Select product: ")+"'")
-cursor = mydb.cursor()
-cursor.execute("SELECT productId FROM product WHERE productName = "+Product)
+while True:
+    Product = ("'"+input("Select product: ")+"'")
+    cursor = mydb.cursor()
+    cursor.execute("SELECT productId FROM product WHERE productName = "+Product)
 
-results = cursor.fetchall()
+    results = cursor.fetchall()
+
+    if results==[]:
+        print("Product not found in list, please enter different product")
+    else:
+        break
+        
 
 ProductID = str(results[0][0])
 
