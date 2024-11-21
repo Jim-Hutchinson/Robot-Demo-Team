@@ -2,9 +2,9 @@ Use Case #1: Successfully Recognize Product by QR
 
 Step 1. Setup a db_config.py file with proper configurations in data_src.
 
-Step 2. Use qrcode_generator to create a QR code with the same ID as the product you want.
+Step 2. Use qrcode_generator.py in data_src to create a QR code with the same ID as the product you want.
 
-Step 3. Run robot_main and select the desired product with matching ID
+Step 3. Run robot_main.py in data_src and select the desired product with matching ID
 
 Step 4. Put the generated QR code in front of the camera
 

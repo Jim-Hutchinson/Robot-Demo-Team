@@ -1,7 +1,9 @@
-Use Case #2: 
+Use Case #2: Successfully log into order.html
 
-Step 1. When opening the webpage in web_src, will be directed to index.html
+Step 1. Setup a db_config.php file with proper configurations in data_src/includes.
 
-Step 2. Index will show input boxes for username and database_password
+Step 2. When opening the webpage in web_src, will be directed to index.html
 
-Step 3. Upon entering in a valid username and password, user will be redirected to order.html
+Step 3. Index will show input boxes for username and database_password
+
+Step 4. Upon entering in a valid username and password, user will be redirected to order.html
