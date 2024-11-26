@@ -14,12 +14,14 @@ Step 3. When opening the webpage in web_src, user will be directed to index.html
 
 Step 4. Follow steps as required in "usecase2"
 
-    Step 4a. Index will show input boxes for username and database_password
+    Step 4a. Open the following link: http://localhost/Robot-Demo-Team/web_src/index.php
 
-    Step 4b. Upon entering in a valid username and password, user will be redirected to order.html
+    Step 4b. Index will show input boxes for username and database_password
+
+    Step 4c. Upon entering in a valid username and password (will be given), user will be redirected to order.html
 
 Step 5. Open dropdown menus on "Select Product", "Select Amount", and "Select Location" and pick any value
 
 Step 6. Press "Confirm Order"
 
-Step 7. Check database for specified combination in the table "live_order"
+Step 7. Check database for specified combination in the table "live_order" by using "SELECT * FROM live_order"
