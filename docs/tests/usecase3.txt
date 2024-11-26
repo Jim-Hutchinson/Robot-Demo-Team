@@ -4,7 +4,8 @@ Use Case #3 Adding orders to the cart
 
 Step 1. Setup local database and download repo
     1a. If you have not already, download, install, and run XAMPP Control Panel. Start Apache Webserver and MySQL server
-    1b. If it is not already installed, downlaod, install, and run MySQL Workbench, setup local connection in and run the sql file under ~\data_src\robot.sql
+    1b. If it is not already installed, downlaod, install, and run MySQL Workbench, setup local connection to webserver in MySQL Workbench at 156.XX.XX.XX 
+    [Hostname, Username and Password will be provided]
     1c. Clone the repo at https://github.com/Jim-Hutchinson/Robot-Demo-Team
 
 Step 2. Setup a db_config.php file with proper configurations in data_src/includes. [includes are bundled with git repo, db_config.php will be provided]
@@ -21,4 +22,4 @@ Step 5. Open dropdown menus on "Select Product", "Select Amount", and "Select Lo
 
 Step 6. Press "Confirm Order"
 
-Step 7. Check local database for specified combination in the table "live_order"
+Step 7. Check database for specified combination in the table "live_order"
