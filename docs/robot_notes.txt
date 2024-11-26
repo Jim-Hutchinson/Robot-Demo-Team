@@ -25,6 +25,12 @@ Hardware:
 
 Front left wheel does not drive forward. Backward works fine. We suspect this is either an issue with the motor gearbox or the motor controller.
 
+Update:
+
+The robot raspberry pi 4 SD card corrupted, causing us to need to flash a new card and effectively reverting a chunk of our progress. We then could not get this pi to boot a new SD card inside the robot. A second raspberry pi was purchased and has replaced the original pi.
+
+The wheel is still broken. We eliminated the motor as being at fault by swapping it for another motor from a working corner of the robot. This seems to confirm the robot's motor driver board has a fault, but we have not been able to test movement with the new raspberry pi and new control software.
+
 Networking:
 
 The robot is connected to the Etown Guest wifi, but this connection is limited and slow. A phone hotspot seems to work better.
