@@ -13,7 +13,6 @@ while True:
         print("Product not found in list, please enter different product")
     else:
         break
-        
 
 ProductID = str(results[0][0])
 
