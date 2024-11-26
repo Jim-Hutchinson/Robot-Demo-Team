@@ -2,7 +2,7 @@ Use Case #1: Successfully Recognize Product by QR
 
 Step 1. Clone and open Robot-Demo-Team in VS Code (github link: https://github.com/Jim-Hutchinson/Robot-Demo-Team).
 
-Step 2. Setup a db_config.py file with proper configurations in data_src (if not alread created).
+Step 2. Setup a db_config.py file with proper configurations in data_src (if not already created).
 
 Step 3. Run qrcode_generator.py in data_src and enter an ID to create a QR code with the same ID as the product you want.
 
