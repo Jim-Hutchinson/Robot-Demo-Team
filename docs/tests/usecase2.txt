@@ -1,10 +1,13 @@
 Use Case #2: Successfully log into order.html
 
-/// EDIT THIS TO BE IDIOT PROOF, CAN A MARINE USE IT [Steps 2&3]
-Step 1. Setup a db_config.php file with proper configurations in data_src/includes.
+Step 1. Clone and open Robot-Demo-Team in VS code.
 
-Step 2. When opening the webpage in web_src, will be directed to index.html
+Step 2. Setup a db_config.php file with proper configurations in data_src/includes (if not alread created).
 
-Step 3. Index will show input boxes for username and database_password
+Step 3. Start both Apache and MySql in the XAMPP control panel on your computer.
 
-Step 4. Upon entering in a valid username and password, user will be redirected to order.html
+Step 4. Open the following link: http://localhost/Robot-Demo-Team/web_src/index.php
+
+Step 5. Index will show input boxes for username and database_password
+
+Step 6. Upon entering in a valid username and password (will be given), user will be redirected to order.html
