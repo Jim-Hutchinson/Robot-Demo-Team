@@ -2,9 +2,14 @@ Use Case #3 Adding orders to the cart
 
 /// EDIT THIS TO BE IDIOT PROOF, CAN A MARINE USE IT [Steps 2&3]
 
-Step 1. Setup a db_config.php file with proper configurations in data_src/includes.
+Step 1. Setup local database and download repo
+    1a. Download, Install, and Run XAMPP Control Panel. Start Apache Webserver and MySQL server
+    1b. Downlaod, Install, and Run MySQL Workbench, setup local connection in and run the sql file under ~\data_src\robot.sql
+    1c. Clone the repo at https://github.com/Jim-Hutchinson/Robot-Demo-Team
 
-Step 2. When opening the webpage in web_src, will be directed to index.html
+Step 2. Setup a db_config.php file with proper configurations in data_src/includes. [includes are bundled with git repo, db_config.php will be provided]
+
+Step 2. When opening the webpage in web_src, user will be directed to index.html
 
 Step 3. Follow steps as required in "usecase2"
 
@@ -16,4 +21,5 @@ Step 4. Open dropdown menus on "Select Product", "Select Amount", and "Select Lo
 
 Step 5. Press "Confirm Order"
 
-Step 6. Check local database for specified combination in the table ""
+///SPECIFIE STEPS
+Step 6. Check local database for specified combination in the table "live_order"
