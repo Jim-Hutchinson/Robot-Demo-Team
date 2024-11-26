@@ -1,1 +1,19 @@
-Use Case #3
+Use Case #3 Adding orders to the cart
+
+/// EDIT THIS TO BE IDIOT PROOF, CAN A MARINE USE IT [Steps 2&3]
+
+Step 1. Setup a db_config.php file with proper configurations in data_src/includes.
+
+Step 2. When opening the webpage in web_src, will be directed to index.html
+
+Step 3. Follow steps as required in "usecase2"
+
+    Step 3. Index will show input boxes for username and database_password
+
+    Step 4. Upon entering in a valid username and password, user will be redirected to order.html
+
+Step 4. Open dropdown menus on "Select Product", "Select Amount", and "Select Location" and pick any value
+
+Step 5. Press "Confirm Order"
+
+Step 6. Check local database for specified combination in the table ""

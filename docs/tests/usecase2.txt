@@ -1,5 +1,6 @@
 Use Case #2: Successfully log into order.html
 
+/// EDIT THIS TO BE IDIOT PROOF, CAN A MARINE USE IT [Steps 2&3]
 Step 1. Setup a db_config.php file with proper configurations in data_src/includes.
 
 Step 2. When opening the webpage in web_src, will be directed to index.html
