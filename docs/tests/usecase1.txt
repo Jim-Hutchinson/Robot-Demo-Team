@@ -1,11 +1,19 @@
 Use Case #1: Successfully Recognize Product by QR
 
-Step 1. Setup a db_config.py file with proper configurations in data_src.
+Step 1. Clone and open the Robot-Demo-Team in VS Code.
 
-Step 2. Use qrcode_generator.py in data_src to create a QR code with the same ID as the product you want.
+Step 2. Setup a db_config.py file with proper configurations in data_src.
 
-Step 3. Run robot_main.py in data_src and select the desired product with matching ID
+Step 3. Run qrcode_generator.py in data_src and enter an ID to create a QR code with the same ID as the product you want.
 
-Step 4. Put the generated QR code in front of the camera
+Step 4. Run robot_main.py in data_src and select the desired product with matching ID
+List: 
+    ID 1=Peaches
+    ID 2=Bananas
+    ID 3=Pears
+    ID 4=Apples
+    ID 5=Kumquat
 
-Step 5. If successful, the camera will close and print the product and its ID into the terminal.
+Step 5. Put the generated QR code in front of the camera opened using robot_main.py
+
+Step 6. If successful, the camera will close and print the product and its ID into the terminal.
