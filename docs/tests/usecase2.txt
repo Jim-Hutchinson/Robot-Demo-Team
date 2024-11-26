@@ -1,6 +1,6 @@
 Use Case #2: Successfully log into order.html
 
-Step 1. Clone and open Robot-Demo-Team in VS code.
+Step 1. Clone and open Robot-Demo-Team in VS code (github link: https://github.com/Jim-Hutchinson/Robot-Demo-Team).
 
 Step 2. Setup a db_config.php file with proper configurations in data_src/includes (if not alread created).
 
