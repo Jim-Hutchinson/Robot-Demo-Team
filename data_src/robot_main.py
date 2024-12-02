@@ -16,6 +16,8 @@ while True:
 
 ProductID = str(results[0][0])
 
+productFound = False
+
 # initialize the cam
 cap = cv2.VideoCapture(0)
 print("QR Reader Active!")
@@ -38,12 +40,19 @@ while True:
             pt2 = tuple(map(int, bbox[(i+1) % len(bbox)][0]))
             cv2.line(img, pt1, pt2, color=(255, 0, 0), thickness=2)
 
-        if data==ProductID:
-            print("ID "+ProductID+":"+Product+" Found!")
-            break
-        elif data!="":
-            print("Correct ID not found, found ID "+data+" instead.")
+        if productFound==False:
+            if data==ProductID:
+                print("ID "+ProductID+":"+Product+" Found!")
+                productFound = True
+            elif data!="":
+                print("Correct ID not found, found ID "+data+" instead.")
         
+        if productFound==True:
+            if data=="Home":
+                print("Returned Home! Ending program")
+                break
+            elif data!="":
+                print("Correct ID not found, found ID "+data+" instead.")
 
     # display the result
     cv2.imshow("img", img)    
