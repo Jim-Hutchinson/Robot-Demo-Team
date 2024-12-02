@@ -51,8 +51,6 @@ while True:
             if data=="Home":
                 print("Returned Home! Ending program")
                 break
-            elif data!="":
-                print("Correct ID not found, found ID "+data+" instead.")
 
     # display the result
     cv2.imshow("img", img)    
