@@ -44,6 +44,7 @@ while True:
             if data==ProductID:
                 print("ID "+ProductID+":"+Product+" Found!")
                 productFound = True
+                break
             elif data!="":
                 print("Correct ID not found, found ID "+data+" instead.")
         
