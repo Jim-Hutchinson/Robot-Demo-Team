@@ -59,9 +59,9 @@ if(!checklogged()){
       </div>
     </div>
   <div class="white-box">
-    <div class="selection1" </div>
+    <div class="selection1"> </div>
   </div>
-    <div class="selection2" </div>
+    <div class="selection2"> </div>
     </div>
     <div class="product">You want to send:</div>
     <div class="location"> To:</div>
