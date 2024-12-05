@@ -22,6 +22,56 @@ html {
   text-align: center;
 }
 
+.login-box{
+  margin:auto;
+  position:relative;
+  top: 30%;
+  width: 400px;
+  height: 350px;
+  background-color: #ebeff5;
+  border-radius: 30px;
+}
+
+.username-box {
+  position: absolute;
+  top: 20%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #004B98;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.password-box {
+  position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 300px;
+  background-color: #004B98;
+  color: white;
+  font-size: 20px;
+  border-radius: 30px;
+  padding: 30px;
+}
+
+.login-button{
+  color: #fff;
+  position: absolute;
+  top: 75%;
+  display: inline-block;
+  background-color: #E1261C;
+  text-decoration: none;
+  padding: 20px 60px;
+  border: 3px solid #E1261C;
+  border-radius: 30px;
+  width: 300px;
+  cursor: pointer;
+}
+
 .modal {
   display: none;
   position: fixed;
@@ -330,6 +380,7 @@ html {
     background-color: #ebeff5;
     border-radius: 30px;
   }
+
 
   .selection1 {               /* Created boxes for selection 1 and 2, that will display on the side the selection you chose from the boxes for product and locatiom */
     position: absolute;
