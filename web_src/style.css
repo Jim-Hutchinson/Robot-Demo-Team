@@ -313,12 +313,12 @@ html {
     color: white;
     font-size: 20px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 25px;
   }
 
   .selection2 {
     position: absolute;
-    top: 60%;
+    top: 63%;
     left: 50%;
     transform: translate(-50%, -50%);
     width: 300px;
@@ -326,7 +326,7 @@ html {
     color: white;
     font-size: 20px;
     border-radius: 30px;
-    padding: 20px;
+    padding: 25px;
   }
 
   .quantity{
