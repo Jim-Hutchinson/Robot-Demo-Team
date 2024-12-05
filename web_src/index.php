@@ -16,7 +16,7 @@ session_start();
                 Password:<input type="password" name="password">
             </div>
             <br/>
-                <button type="submit" id="confirmOrderButton" class="order">Login</button>
+                <button type="submit" id="confirmOrderButton" class="login-button">Login</button>
         </form>
     </div> 
     </body>

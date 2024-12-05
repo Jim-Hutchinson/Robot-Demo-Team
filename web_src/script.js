@@ -8,6 +8,11 @@ function setSelection2(value) {
   selection2.innerText = value;
 }
 
+function setQuantity(value) {
+  const quantity = document.querySelector(".quantity");
+  quantity.innerText = value;
+}
+
 function fetchProductOptions() {
   fetch('product.php')
     .then(response => response.json())

@@ -33,7 +33,7 @@ if(!checklogged()){
     </div>
 
     <div class="box">
-      <select id="QuantitySelect" name="quantity">
+      <select id="QuantitySelect" name="quantity" onchange="setQuantity(this.value)">
         <option>Select Amount</option>
         <option>1</option>
         <option>2</option>
@@ -59,14 +59,14 @@ if(!checklogged()){
       </div>
     </div>
   <div class="white-box">
-    <div class="selection1" </div>
-  </div>
-    <div class="selection2" </div>
-    </div>
+    <div class="quantity"></div>
+    <div class="selection1" ></div>
+    <div class="selection2"></div>
     <div class="product">You want to send:</div>
     <div class="location"> To:</div>
     <button type="submit" id="confirmOrderButton" class="order">Confirm Order</button>
     </form>
+  </div>
 </body>
 <script src="script.js"></script>
 
