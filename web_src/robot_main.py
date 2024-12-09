@@ -2,19 +2,12 @@ import mysql.connector
 from db_config import mydb
 import cv2
 
-while True:
-    Product = ("'"+input("Select product: ")+"'")
-    cursor = mydb.cursor()
-    cursor.execute("SELECT productId FROM product WHERE productName = "+Product)
+cursor = mydb.cursor()
+cursor.execute("select * from live_order order by orderedOn desc limit 1")
 
-    results = cursor.fetchall()
+results = cursor.fetchall()
 
-    if results==[]:
-        print("Product not found in list, please enter different product")
-    else:
-        break
-
-ProductID = str(results[0][0])
+ProductID = str(results[0][2])
 
 productFound = False
 
@@ -42,11 +35,8 @@ while True:
 
         if productFound==False:
             if data==ProductID:
-                print("ID "+ProductID+":"+Product+" Found!")
+                print("ID "+ProductID+" Found!")
                 productFound = True
-                break
-            elif data!="":
-                print("Correct ID not found, found ID "+data+" instead.")
         
         if productFound==True:
             if data=="Home":
