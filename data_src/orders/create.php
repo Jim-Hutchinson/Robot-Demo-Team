@@ -43,6 +43,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     } else {
         echo json_encode(['error' => "Selections for Product or Location are missing."]);
     }
+
+
+
 } else {
     http_response_code(405);
     echo json_encode(['error' => "Method Not Allowed"]);
