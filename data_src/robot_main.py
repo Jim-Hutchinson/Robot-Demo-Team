@@ -2,15 +2,21 @@ import mysql.connector
 from db_config import mydb
 import cv2
 
-cursor = mydb.cursor()
-cursor.execute("select * from live_order order by orderedOn desc limit 1")
+lastRecord=[]
+while True:
+    cursor = mydb.cursor()
+    cursor.execute("select * from live_order order by orderedOn desc limit 1")
 
-results = cursor.fetchall()
-
-ProductID = str(results[0][2])
+    results = cursor.fetchall()
+    print(results)
+    if results!=lastRecord:
+        print("Results Changed!")
+    else:
+        print("Results unchanged")
+    ProductID = str(results[0][2])
 
 productFound = False
-
+'''
 # initialize the cam
 cap = cv2.VideoCapture(0)
 print("QR Reader Active!")
@@ -51,3 +57,4 @@ while True:
 
 cap.release()
 cv2.destroyAllWindows()
+'''
