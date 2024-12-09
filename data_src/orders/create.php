@@ -12,8 +12,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
         // Check for both placeholder values and empty values.
         if ($productId === 'Select Product' || empty($productId) || 
-            $locationId === 'Select Location' || empty($locationId)) {
-            echo json_encode(['error' => "Invalid selection for Product or Location."]);
+            $locationId === 'Select Location' || empty($locationId) ||
+            $quantity === 'Select Amount' || empty($quentity)) {
+            echo json_encode(['error' => "Invalid selection for Product, Quantity, or Location."]);
             return; // Stop script execution after error
         }
 
