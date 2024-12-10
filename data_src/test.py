@@ -1,5 +1,5 @@
 import mysql.connector
-from db_config import mydb
+from web_src.db_config import mydb
 
 #need to have this in a try block in case the connect didn't work
 try:

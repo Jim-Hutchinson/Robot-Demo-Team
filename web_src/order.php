@@ -3,10 +3,6 @@ require "../data_src/includes/sessioncheck.php";
 if(!checklogged()){
   header("location:index.php?LoggedIn=False");
 }
-$dir = __DIR__
-$py_dir = $dir . "../data_src/robot_main.py"
-$output = exec('python '+$py_dir);
-echo $output;
 ?>
 
 
@@ -75,3 +71,7 @@ echo $output;
 <script src="script.js"></script>
 
 </html>
+
+<?PHP
+//echo shell_exec(escapeshellcmd('robot_main.py'));
+?>
