@@ -3,7 +3,9 @@
 The Robot Demo Project connects a small autonomous robot to an existing database and ordering system. When an order is placed, the robot will detect this change in the database and move to fulfill the request. The robot also features manual controls and a camera feed to a webpage for first-person control.
 
 **Project Setup:**
-Instructions for setting up the robot demo will go here.
+1. Clone github repo into xampp/htdocs directory
+
+2. 
 
 **Controls:**
 Controls for manual and autonomous driving will go here.

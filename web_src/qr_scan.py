@@ -1,4 +1,5 @@
 import cv2
+import time
 
 def qrScan(ProductID):
     productFound = False
@@ -32,7 +33,7 @@ def qrScan(ProductID):
             
             if productFound==True:
                 if data=="Home":
-                    print("Returned Home! Ending program")
+                    print("Returned Home!")
                     break
 
         # display the result
@@ -43,3 +44,5 @@ def qrScan(ProductID):
 
     cap.release()
     cv2.destroyAllWindows()
+    time.sleep(2)
+    print("Program ended.")

@@ -17,6 +17,7 @@ while True:
         ProductID = str(results[0][1])
         print(ProductID)
         qr_scan.qrScan(ProductID)  
+        print("Waiting for next order...")
     lastRecord = results
     checkActive = True
     cursor.close()
